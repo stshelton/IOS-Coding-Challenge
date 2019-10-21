@@ -13,9 +13,11 @@
 		41FC670B235E21A60036D105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FC6709235E21A60036D105 /* Main.storyboard */; };
 		41FC670D235E21A70036D105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FC670C235E21A70036D105 /* Assets.xcassets */; };
 		41FC6710235E21A70036D105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FC670E235E21A70036D105 /* LaunchScreen.storyboard */; };
+		6638C6EA7C6AFC31A9394D65 /* Pods_STS_IOSCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84448826748A90CA0CC0313E /* Pods_STS_IOSCodingChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187B2C792DC525CF3674BC8D /* Pods-STS_IOSCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STS_IOSCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		41FC6700235E21A60036D105 /* STS_IOSCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STS_IOSCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FC6703235E21A60036D105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FC6705235E21A60036D105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		41FC670C235E21A70036D105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FC670F235E21A70036D105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FC6711235E21A70036D105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84448826748A90CA0CC0313E /* Pods_STS_IOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STS_IOSCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A4A938B5BF7689712A92CD /* Pods-STS_IOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STS_IOSCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6638C6EA7C6AFC31A9394D65 /* Pods_STS_IOSCodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		319F7E584DA0738CBC741D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84448826748A90CA0CC0313E /* Pods_STS_IOSCodingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41FC66F7235E21A60036D105 = {
 			isa = PBXGroup;
 			children = (
 				41FC6702235E21A60036D105 /* STS_IOSCodingChallenge */,
 				41FC6701235E21A60036D105 /* Products */,
+				8DBB561233A55A2A591B8D5D /* Pods */,
+				319F7E584DA0738CBC741D6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = STS_IOSCodingChallenge;
 			sourceTree = "<group>";
 		};
+		8DBB561233A55A2A591B8D5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1A4A938B5BF7689712A92CD /* Pods-STS_IOSCodingChallenge.debug.xcconfig */,
+				187B2C792DC525CF3674BC8D /* Pods-STS_IOSCodingChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41FC6714235E21A70036D105 /* Build configuration list for PBXNativeTarget "STS_IOSCodingChallenge" */;
 			buildPhases = (
+				680F56AD7D8309D6170EE8F9 /* [CP] Check Pods Manifest.lock */,
 				41FC66FC235E21A60036D105 /* Sources */,
 				41FC66FD235E21A60036D105 /* Frameworks */,
 				41FC66FE235E21A60036D105 /* Resources */,
+				D3ED3030090A0A8857BBE198 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		680F56AD7D8309D6170EE8F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STS_IOSCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3ED3030090A0A8857BBE198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41FC66FC235E21A60036D105 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		41FC6715235E21A70036D105 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A4A938B5BF7689712A92CD /* Pods-STS_IOSCodingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		41FC6716235E21A70036D105 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187B2C792DC525CF3674BC8D /* Pods-STS_IOSCodingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
