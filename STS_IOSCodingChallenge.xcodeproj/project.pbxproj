@@ -3,21 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41DE9A9D235E33AE005071E4 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE9A9C235E33AE005071E4 /* Genre.swift */; };
 		41FC6704235E21A60036D105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC6703235E21A60036D105 /* AppDelegate.swift */; };
 		41FC6706235E21A60036D105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC6705235E21A60036D105 /* SceneDelegate.swift */; };
 		41FC6708235E21A60036D105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC6707235E21A60036D105 /* ViewController.swift */; };
 		41FC670B235E21A60036D105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FC6709235E21A60036D105 /* Main.storyboard */; };
 		41FC670D235E21A70036D105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FC670C235E21A70036D105 /* Assets.xcassets */; };
 		41FC6710235E21A70036D105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FC670E235E21A70036D105 /* LaunchScreen.storyboard */; };
+		41FC6719235E27C10036D105 /* AppleItunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC6718235E27C10036D105 /* AppleItunesMedia.swift */; };
 		6638C6EA7C6AFC31A9394D65 /* Pods_STS_IOSCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84448826748A90CA0CC0313E /* Pods_STS_IOSCodingChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		187B2C792DC525CF3674BC8D /* Pods-STS_IOSCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STS_IOSCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		41DE9A9C235E33AE005071E4 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		41FC6700235E21A60036D105 /* STS_IOSCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STS_IOSCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FC6703235E21A60036D105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FC6705235E21A60036D105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		41FC670C235E21A70036D105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41FC670F235E21A70036D105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FC6711235E21A70036D105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FC6718235E27C10036D105 /* AppleItunesMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItunesMedia.swift; sourceTree = "<group>"; };
 		84448826748A90CA0CC0313E /* Pods_STS_IOSCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STS_IOSCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A4A938B5BF7689712A92CD /* Pods-STS_IOSCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STS_IOSCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-STS_IOSCodingChallenge/Pods-STS_IOSCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +75,7 @@
 		41FC6702235E21A60036D105 /* STS_IOSCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				41FC6717235E278F0036D105 /* Classes */,
 				41FC6703235E21A60036D105 /* AppDelegate.swift */,
 				41FC6705235E21A60036D105 /* SceneDelegate.swift */,
 				41FC6707235E21A60036D105 /* ViewController.swift */,
@@ -82,13 +87,21 @@
 			path = STS_IOSCodingChallenge;
 			sourceTree = "<group>";
 		};
+		41FC6717235E278F0036D105 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41FC6718235E27C10036D105 /* AppleItunesMedia.swift */,
+				41DE9A9C235E33AE005071E4 /* Genre.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		8DBB561233A55A2A591B8D5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				F1A4A938B5BF7689712A92CD /* Pods-STS_IOSCodingChallenge.debug.xcconfig */,
 				187B2C792DC525CF3674BC8D /* Pods-STS_IOSCodingChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +223,8 @@
 				41FC6708235E21A60036D105 /* ViewController.swift in Sources */,
 				41FC6704235E21A60036D105 /* AppDelegate.swift in Sources */,
 				41FC6706235E21A60036D105 /* SceneDelegate.swift in Sources */,
+				41FC6719235E27C10036D105 /* AppleItunesMedia.swift in Sources */,
+				41DE9A9D235E33AE005071E4 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
