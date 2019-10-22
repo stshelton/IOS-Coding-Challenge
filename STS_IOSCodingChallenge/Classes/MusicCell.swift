@@ -75,12 +75,14 @@ class MusicCell: UITableViewCell{
         let btn = UIButton()
         btn.backgroundColor = UIColor.secondarySystemBackground
         btn.layer.cornerRadius = 5
+        btn.setTitleColor(UIColor.label, for: .normal)
         btn.setTitle("View Artist", for: .normal)
         return btn
     }()
     
     private let ViewMusic: UIButton = {
         let btn = UIButton()
+        btn.setTitleColor(UIColor.label, for: .normal)
         btn.setTitle("View Album", for: .normal)
         return btn
     }()
